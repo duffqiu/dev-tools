@@ -3,7 +3,7 @@ MAINTAINER duffqiu@gmail.com
 
 RUN rpm --import http://mirror.centos.org/centos/RPM-GPG-KEY-CentOS-7
 RUN yum -y  update
-RUN yum -y install cppunit git 
+RUN yum -y install cppunit git gcc
 RUN yum -y install python-setuptools
 
 WORKDIR /workspace
