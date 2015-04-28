@@ -1,0 +1,14 @@
+FROM duffqiu/net-tools:latest
+MAINTAINER duffqiu@gmail.com
+
+RUN rpm --import http://mirror.centos.org/centos/RPM-GPG-KEY-CentOS-7
+RUN yum -y  update
+RUN yum -y install cppunit git 
+RUN yum -y install python-setuptools
+
+WORKDIR /workspace
+
+VOLUME /workspace
+
+ENTRYPOINT [ "/bin/bash", "-c" ]
+
