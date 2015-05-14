@@ -8,6 +8,7 @@ RUN yum -y install python-setuptools
 RUN yum -y install automake pkgconfig libtool
 RUN yum -y install hostname make pcre-devel openssl openssl-devel
 RUN yum -y install net-snmp net-snmp-utils net-snmp-devel 
+RUN yum -u install bzip2
 
 WORKDIR /workspace
 
